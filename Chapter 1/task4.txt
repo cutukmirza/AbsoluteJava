@@ -1,0 +1,21 @@
+public class Task4 {
+
+	public static void main(String[] args) {
+		double SWEETENER_AMOUNT_KILLS = 0.0001;
+		double MOUSE_WEIGHT = 0.04;
+		double DIETER_WEIGHT = 120;
+		double DESIRED_WEIGHT = 80;
+		double SWEETENER_AMOUNT_IN_SODA = 0.001;
+		
+		double amountSweetenerKillsFriend = (DIETER_WEIGHT / MOUSE_WEIGHT)*SWEETENER_AMOUNT_KILLS;
+		
+		Double amountOfSodaDrinkable = amountSweetenerKillsFriend / SWEETENER_AMOUNT_IN_SODA;
+		System.out.println("Friend can drink " + amountOfSodaDrinkable + " cans of soda");
+		
+	}
+	
+	
+		
+	
+
+}

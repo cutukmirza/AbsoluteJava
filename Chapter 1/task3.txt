@@ -1,0 +1,23 @@
+public class Task3 {
+
+	public static void main(String[] args) {
+		String name = "Mirza";
+		String surname = "Cutuk";
+		
+		String pigName= name.substring(1) + name.charAt(0) + "ay";
+		pigName = pigName.toLowerCase();
+		pigName = pigName.substring(0, 1).toUpperCase() + pigName.substring(1);
+		
+		String pigSurname = surname.substring(1) + surname.charAt(0) + "ay";
+		pigSurname = pigSurname.toLowerCase();
+		pigSurname = pigSurname.substring(0, 1).toUpperCase() + pigSurname.substring(1);
+		
+		System.out.println(pigName + " " + pigSurname);
+		
+	}
+	
+	
+		
+	
+
+}

@@ -1,0 +1,20 @@
+public class Task5 {
+
+	public static void main(String[] args) {
+		final String STRING_TO_CHANGE = "hate";
+		
+		String sentence = "I hate you. I hate everything you do.";
+		
+		sentence = sentence.replaceFirst(STRING_TO_CHANGE, "love");
+		
+		
+		
+		System.out.println(sentence);
+		
+	}
+	
+	
+		
+	
+
+}

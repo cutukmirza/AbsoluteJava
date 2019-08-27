@@ -1,0 +1,22 @@
+public class Task1 {
+
+	public static void main(String[] args) {
+		int weightPounds=150;
+		double weightKilo = weightPounds / 2.2;
+		double basketballTimeMinutes = 30;
+		double sleepingTimeMinutes = 180;
+		double runningTimeMinutes = 30;
+		// caloriesPerMinute = 0.0175 * met * weightKilo;		
+		int bballMet = 8;
+		int runningMet = 10;
+		int sleepingMet = 1;
+		
+		double bballCalories = (0.0175 * bballMet * weightKilo)*basketballTimeMinutes;
+		double runningCalories = (0.0175 * runningMet * weightKilo)*sleepingTimeMinutes;
+		double sleepingCalories = (0.0175 * sleepingMet * weightKilo)*runningTimeMinutes;
+		
+		double totalCaloriesSpent = bballCalories + runningCalories + sleepingCalories;
+		
+		System.out.println("The total calories spent are: " + totalCaloriesSpent);
+		
+	}

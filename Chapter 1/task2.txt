@@ -1,0 +1,21 @@
+
+public class Task2 {
+
+	public static void main(String[] args) {
+		int gumballPrice = 3;
+		int candyPrice = 10;
+		
+		int couponsWon = 57;
+		
+		int candyNumber = couponsWon/candyPrice;
+		int gumballNumber = (couponsWon % candyPrice) / gumballPrice;
+		
+		System.out.println("Number of candy bars: " + candyNumber + ", number of gumballs: " + gumballNumber);
+		
+	}
+	
+	
+		
+	
+
+}
