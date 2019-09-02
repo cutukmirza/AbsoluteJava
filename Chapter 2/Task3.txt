@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Task3 {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner (System.in);
+		System.out.println("Please type in two integer numbers:");
+		int number1 = in.nextInt();
+		int number2 = in.nextInt();
+		in.close();
+		
+		System.out.println("The numbers you typed in are: " + number1 + " " + number2);
+		System.out.println("Sum of these numbers is: " + (number1 + number2));
+		System.out.println("Difference of these numbers is: " + (number1 - number2));
+		System.out.println("Product of these numbers is: " + (number1 * number2));
+		
+	}
+	
+}

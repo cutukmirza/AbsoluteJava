@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Task2 {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner (System.in);
+		System.out.println("Please type in your name and surname separated by a space:");
+		String first = in.next();
+		String last = in.next();
+		System.out.println("Your name is " + first + " " + last);
+		
+		String pigFirst = first.substring(1) + first.substring(0, 1) + "ay" ;
+		pigFirst = pigFirst.substring(0, 1).toUpperCase() + pigFirst.substring(1).toLowerCase();
+		
+		String pigLast = last.substring(1) + last.substring(0, 1) + "ay";
+		pigLast = pigLast.substring(0, 1).toUpperCase() + pigLast.substring(1).toLowerCase();
+		
+		
+		System.out.println("Your pigname is " + pigFirst + " " + pigLast);
+		
+		
+	}
+	
+	
+		
+	
+
+}

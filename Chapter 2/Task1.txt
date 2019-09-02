@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		System.out.println("Please type in the number to compute the square root.");
+		int number = in.nextInt();
+		System.out.println("The number you typed in is " + number);
+		in.close();
+		
+		
+		double guess = number/2;
+		double r = number / guess;
+		guess = (guess + r) / 2;
+		
+		r = number / guess;
+		guess = (guess + r) / 2;
+		
+		r = number / guess;
+		guess = (guess + r) / 2;
+		
+		r = number / guess;
+		guess = (guess + r) / 2;
+		
+		r = number / guess;
+		guess = (guess + r) / 2;
+		
+		/* simpler implementation using a for loop
+		 double guess = number/2;
+		 double r;
+		
+		for (int i = 0; i < 5; i++) {
+			r = number / guess;
+			guess = (guess + r)/2;
+		}
+		*/
+		
+		System.out.printf("The square root of "+ number + " is " + "%.2f", guess);
+		
+	}
+	
+	
+		
+	
+
+}

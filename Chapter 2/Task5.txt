@@ -1,0 +1,23 @@
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class Task5 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please input the buying price, years of service and salvage price");
+		double buyPrice = in.nextDouble();
+		double years = in.nextDouble();
+		double salvagePrice = in.nextDouble();
+		in.close();
+		
+		NumberFormat formatObject = NumberFormat.getCurrencyInstance();
+		
+		double depreciation = (buyPrice - salvagePrice)/years;
+		
+		System.out.println("Yearly depreciation of the item is: " + formatObject.format(depreciation));
+		
+		
+	}
+	
+}

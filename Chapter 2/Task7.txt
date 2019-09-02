@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Task7 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter the price of the item");
+		System.out.println("(from 25 cents to a dollar, in 5-cent increments)");
+		int itemPrice = in.nextInt();
+		
+		int quarters, dimes, nickels;
+		int change = 100 - itemPrice;
+		quarters = change / 25;
+		dimes = (change % 25) / 10;
+		nickels = ((change % 25) % 10) / 5;
+		
+		System.out.println("You bought an item for " + itemPrice + " cents, and you gave me a dollar.");
+		System.out.println("Your change is:\n" + "quarters: " + quarters + "\n" + "dimes: " + dimes + "\n" + "nickels: " + nickels);
+		
+
+		
+		
+	}
+	
+}

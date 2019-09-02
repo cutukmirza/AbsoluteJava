@@ -1,0 +1,32 @@
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class Task4 {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner (System.in);
+		System.out.println("Please input the distance of the commute in miles, automobile's fuel consumption in miles per gallon, and the current price of one gallon of gas:");
+		
+		double commuteLength = in.nextDouble();
+		double fuelConsumption = in.nextDouble();
+		double fuelPrice = in.nextDouble();
+		in.close();
+		
+		NumberFormat formatObject = NumberFormat.getCurrencyInstance();
+		
+		System.out.printf("%s%.2f%s%n", "Distance of the commute is: ", commuteLength, " miles");
+		System.out.println("Fuel consumption is: " + fuelConsumption + " miles per gallon");
+		System.out.println("Current fuel price is: " + formatObject.format(fuelPrice) + " per gallon");
+		
+		double commutePrice = (commuteLength/fuelConsumption) * fuelPrice;
+		System.out.println("Commute price is : " + formatObject.format(commutePrice));
+		
+		// for testing purposes I took:
+		// any commute length
+		// average fuel consumption of an Audi A3 which is 24.1 miles per gallon
+		// current gas price which was $4.84
+		
+	}
+	
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Task6 {
+
+	public static void main(String[] args) {
+		final double SWEETENER_IN_SODA = 0.001;
+		
+		Scanner in = new Scanner (System.in);
+		System.out.println("Please input the amount of sweetener to kill a mouse, mouse weight and desired dieter weight");
+		double amountToKillMouse = in.nextDouble();
+		double mouseWeight = in.nextDouble();
+		double desiredWeight = in.nextDouble();
+		in.close();
+		
+		double amountToKillDieter = (amountToKillMouse/mouseWeight)*desiredWeight;
+		int numberOfSodas = (int) (amountToKillDieter/SWEETENER_IN_SODA);
+		
+		System.out.println("the number of sodas drinkable before dying is: "  + numberOfSodas);
+		
+	}
+	
+}
